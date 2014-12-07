@@ -12,5 +12,6 @@
     <string name="way_shopper">Way Shopper</string>
     <string name="submit">Submit</string>
     <string name="Back">Back</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

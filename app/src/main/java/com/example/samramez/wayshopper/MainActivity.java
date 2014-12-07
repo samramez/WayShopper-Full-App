@@ -1,10 +1,7 @@
 package com.example.samramez.wayshopper;
 
-import android.app.Fragment;
-import android.app.FragmentManager;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
-import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.Menu;
@@ -19,12 +16,16 @@ public class MainActivity extends FragmentActivity {
     private PagerAdapter mPagerAdapter;
 
 
+    //defining Fragments
+    protected FragmentMainPage fragmentMainPage;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mPager = (ViewPager) findViewById(R.id.main_activity_layout);
+        mPager = (ViewPager) findViewById(R.id.pager);
 
 
     }
@@ -52,27 +53,8 @@ public class MainActivity extends FragmentActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    /**
-     * A simple pager adapter that represents 5 {@link ScreenSlidePageFragment} objects, in
-     * sequence.
-     */
-//    private class ScreenSlidePagerAdapter extends FragmentStatePagerAdapter {
-//
-//        public ScreenSlidePagerAdapter(FragmentManager fm) {
-//
-//            super(fm);
-//        }
-//
-//        @Override
-//        public Fragment getItem(int position) {
-//
-//            return ScreenSlidePageFragment.create(position);
-//        }
-//
-//        @Override
-//        public int getCount() {
-//
-//            return NUM_PAGES;
-//        }
-//    }
+    @Override
+    protected void onStart() {
+        fragmentMainPage = (FragmentMainPage) getFragmentManager().
+    }
 }
