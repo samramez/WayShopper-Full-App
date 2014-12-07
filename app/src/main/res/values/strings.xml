@@ -6,13 +6,11 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_splash">Splash</string>
     <string name="search_store">Search by Store, Item or List</string>
-    <string name="browse_store">Browse Stores</string>
-    <string name="search_items">Search For Items</string>
-    <string name="choose_existing">Choose an Existing List</string>
-    <string name="already_in_store">I\'m in a Store Already</string>
+    <string name="ShoppingList">Shopping List</string>
+    <string name="FindWayInsideStore">Find Way Inside Store</string>
+    <string name="FindItemInsideStore">Find Item Inside Store</string>
     <string name="way_shopper">Way Shopper</string>
-    <string name="title_activity_secondpage">Secondpage</string>
-    <string name="title_activity_mappage">Mappage</string>
     <string name="submit">Submit</string>
+    <string name="Back">Back</string>
 
 </resources>

@@ -51,45 +51,30 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/shoppingListButton"
         style="@style/AppTheme"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:text="@string/browse_store"
+        android:text="@string/ShoppingList"
         android:textSize="15sp"
         android:onClick="goToSecondPage"  />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/findWayButton"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button1"
-        android:layout_below="@+id/button1"
         android:layout_marginTop="18dp"
-        android:text="@string/search_items"
+        android:text="@string/FindWayInsideStore"
         android:textSize="15sp"
-        android:onClick="goToSecondPage"  />
+        android:onClick="" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/findItemButton"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button2"
-        android:layout_below="@+id/button2"
         android:layout_marginTop="18dp"
-        android:text="@string/choose_existing"
+        android:text="@string/FindItemInsideStore"
         android:textSize="15sp"
-        android:onClick="goToSecondPage"  />
-
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/editText1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="28dp"
-        android:text="@string/already_in_store"
-        android:textSize="15sp"
-        android:onClick="goToSecondPage" />
+        android:onClick=""  />
 
 </LinearLayout>
