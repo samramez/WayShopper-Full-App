@@ -1,22 +1,32 @@
 package com.example.samramez.wayshopper;
 
-import android.support.v7.app.ActionBarActivity;
+import android.app.Fragment;
+import android.app.FragmentManager;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentStatePagerAdapter;
+import android.support.v4.view.PagerAdapter;
+import android.support.v4.view.ViewPager;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Button;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends FragmentActivity {
 
+    //ViewPager for the sliding pages
+    private ViewPager mPager;
 
-    Button
+    private PagerAdapter mPagerAdapter;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        mPager = (ViewPager) findViewById(R.id.main_activity_layout);
+
+
     }
 
 
@@ -41,4 +51,28 @@ public class MainActivity extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    /**
+     * A simple pager adapter that represents 5 {@link ScreenSlidePageFragment} objects, in
+     * sequence.
+     */
+//    private class ScreenSlidePagerAdapter extends FragmentStatePagerAdapter {
+//
+//        public ScreenSlidePagerAdapter(FragmentManager fm) {
+//
+//            super(fm);
+//        }
+//
+//        @Override
+//        public Fragment getItem(int position) {
+//
+//            return ScreenSlidePageFragment.create(position);
+//        }
+//
+//        @Override
+//        public int getCount() {
+//
+//            return NUM_PAGES;
+//        }
+//    }
 }
