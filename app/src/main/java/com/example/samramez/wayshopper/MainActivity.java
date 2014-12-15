@@ -55,6 +55,6 @@ public class MainActivity extends FragmentActivity {
 
     @Override
     protected void onStart() {
-        fragmentMainPage = (FragmentMainPage) getFragmentManager().
+        //fragmentMainPage = (FragmentMainPage) getFragmentManager().
     }
 }
